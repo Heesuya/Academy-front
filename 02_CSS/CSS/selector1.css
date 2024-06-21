@@ -1,0 +1,43 @@
+/* 전체선택자 */
+/*
+*{
+    color: skyblue;
+}
+~.~
+*/
+
+/* 아이디 선택자 */
+#li3{
+    color: skyblue;
+}
+#li5{
+    color: antiquewhite;
+}
+
+/* 클래스 선택자 */
+.li1{
+    color: darkcyan;
+}
+.li2{
+    color: fuchsia;
+}
+
+.li4{
+    background-color: aliceblue;
+}
+
+/* 태그 선택자  */
+/* 
+하나씩도 가능
+h2{
+    color: cornflowerblue;
+}
+
+p{
+    color: slategrey;
+}
+*/
+/*, 를 이용하면 여러 선택자를 한번에 선택 할 수 있음*/
+h2,p{
+    color: palevioletred;
+}

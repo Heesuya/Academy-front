@@ -1,0 +1,73 @@
+#div1>p:first-child{
+    background-color: tomato;
+    color: white;
+}
+#div1>p:last-child{   /*막내자식은 pre 위치로 구분한다*/
+    background-color: cornflowerblue;
+    color: white;
+}
+
+#div1>p:nth-child(2n){
+    background-color: bisque;
+    color: white;
+}
+#div1>p:nth-last-child(2){
+    background-color: blueviolet;
+    color: white;
+}
+/*형태구조선택자*/
+#div2>p:first-of-type{
+    background-color: tomato;
+    color: white;
+}
+#div2>p:last-of-type{
+    background-color: cornflowerblue;
+    color:white;
+}
+#div2>p:nth-of-type(2){
+    background-color: bisque;
+    color:  white;
+}
+#div2>p:nth-last-of-type(2){
+    background-color: blueviolet;
+    color: white;
+}
+/*문자 선택자*/
+#div3>p::first-line{
+    background-color: aquamarine;
+}
+#div3>p::selection{
+    background-color: red;
+    color : white;
+}
+/*부정선택자*/
+#div4>p:not(:first-child){
+    background-color: tomato;
+    color: white;
+}
+
+/*선택자 우선수위*/
+.ccc{
+    color: red;
+}
+#aaa{
+    color: red;
+}
+.bbbb{
+    color: blue;
+}
+
+.li{
+    color: blue;
+}
+.ul>li{
+    color : red;
+}
+
+.ccc{
+    color: blue;
+}
+
+p.ddd{
+    color: darkgreen;
+}

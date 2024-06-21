@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>하이퍼링크 태그</title>
+</head>
+<body>
+    <h1 id="test">하이퍼링크 태그</h1>
+    <hr>
+    <!-- a태그 작성 시 아무 속성도 사용하지않으면 span과 다를 게 없음 -->
+    <a>이게 하이퍼링크 태그입니다.</a>
+    <br>
+    <!-- a태그에 href속성을 사용해야 다른 문서로 열기 가능 -->
+    <!-- <a href="클릭시 보고싶은 문서위치">화면에 보여줄 문자</a> -->
+    <a href="01_글자태그.html">글자태그로 이동</a>
+    <br>
+    <!--
+    target속성을 사용하면 href에 작성한 문서가 열리는 위치 지정 가능
+    _self : 현재 창을 변경(default)
+    _blank : 새 창을 띄워서 문서 열기
+    _parent : 부모창에서 문서열기(부모창 : 현재 창을 열어준 창)
+    _top : 최상위창      << 거의 안써영
+    -->
+    <a href="05_멀티미디어태그.html" target="_blank">자다깬 형준이가 있는 멀티미디어태그</a>
+    <br>
+    <!--
+        a태그로 페이지를 이동할때 내가 작성하지 않은 페이지로도 이동가능(외부문서도 가능)
+        http 또는 https로 시작하면 외부페이지로 이동이 가능 
+        -->
+    <a href="http://www.naver.com">네이버로 이동</a>
+    <br>
+    <a href="https://kh-academy.co.kr/login/login.kh"><img src="image/KakaoTalk_20240621_110008095.jpg" width="50px"></a>
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <!--
+        현재문서내부에서도 이동가능
+        이동하고싶은 부분에 id속성을 부여
+        href에 #아이디
+    -->
+    <a href="#test">맨위로</a> <!--실제로는 이거 사용 안하고 자바스크립트이용함-->
+</body>
+</html>

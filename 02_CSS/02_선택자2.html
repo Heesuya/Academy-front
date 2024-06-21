@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>선택자2</title>
+    <link rel="stylesheet" href="CSS/selector2.css"
+</head>
+<body>
+    <h2>속성 선택자</h2>
+    <p>[]를 이용하여 속성과 속성값을 사용하여 선택</p>
+    <pre>선택자[속성이름=속성값]{속성명:값;}</pre>
+    <div name="name1" class="div-class1">div1</div>
+    <div name="name2" class="div-class2">div1</div>
+    <div name="name3" class="div-class3">div1</div>
+    <div name="name1" class="class-div">div1</div>
+    <hr>
+    <h2>자손/후손 선택자</h2>
+    <p>
+        자손선택자 : 바로 아래 하위요소<br>
+        후손선택자 : 하위요소 전체 
+    </p>
+    <div id="div1">
+        <h2>나는 div1의 자손</h2>
+        <h3>나는 div1의 자손</h3>
+        <ul id="ul1">
+            <li>나는 ul의 자손</li>
+            <li>나는 ul의 자손</li>
+        </ul>
+        <ul id="ul2">
+            <li>나는 ul2의 자손</li>
+            <li>나는 ul2의 자손</li>
+        </ul>
+    </div>
+    <hr>
+    <h2>동위 선택자</h2>
+    <p>동위 관계에서 있는 태그를 선택할 때 사용</p>
+    <pre>바로 다음요소 : 선택자+선택자{속성:값;} / 다음 모든 요소 : 선택자~선택자{속성:값;}</pre>
+    <div id="div2">
+        <div class="test1">TEST1</div>
+        <div class="test2">TEST2</div>
+        <div class="test3">TEST3</div>
+        <div class="test4">TEST4</div>
+        <div class="test5">TEST5</div>
+    </div>
+    <hr>
+    <h2>반응선택자</h2>
+    <p>사용자의 움직임에 따라서 달라지는 선택자</p>
+    <pre>사용자가 클릭한 태그  선택자:active{속성:값;} / 사용자의 마우스가 올라간 태그  선택자:hover{속성:값;}</pre>
+    <div class="action-div active-test"></div>
+    <hr>
+    <div class="action-div hover-test"></div>
+    <hr>
+    <h2>상태선택자</h2>
+    <p>입력양식의 상태에 따라서 선택되는 선택자</p>
+    <pre>input태그선택자:상태{속성:값;}</pre>
+    <input type="checkbox" name="hobby" value="잠자기"><label>잠자기</label><br>
+    <input type="checkbox" name="hobby" value="독서"><label>독서</label><br>
+    
+    <input type="text" name="id"><br>
+    <input type="text" name="name" readonly><br>
+    <input type="text" name="phone" disabled><br>
+</body>
+</html>
