@@ -1,0 +1,190 @@
+.div1{
+    background-color: antiquewhite;
+    /*
+    볼록요소 크기가 지정되는 기준
+    width : 크기를 지정하지 않으면, 부모 요소 너비의 100% 가져감
+            -> 지정하면 지정한 만큼
+
+    height : 높이값을 지정하지 않으면, 내부에 있는 내용 높이의 합
+            -> 지정하면 지정한 만큼
+    인라인요소 크기가 지정되는 기준
+    width.height : 내부컨텐츠의 너비/높이만큼
+            -> 지정해도 크기변화없음(지정불가능)
+    */
+    width: 500px;
+    height: 300px;
+}
+.div2{
+    width: 1000px;
+    height: 300px;
+    background-color: burlywood;
+}
+.div3{
+    /*단위를 %로 사용하면 부모 크기의 비율로 적용*/
+    width: 50%;
+    height: 50%;
+    background-color: blueviolet;
+}
+.div4{
+    width: 500px;
+    height: 300px;
+    background-color: cornsilk;
+}
+.div5{
+    /*
+    width/height 지정 시 부모요소의 너비/높이보다 크더라도 그냥 적용
+    */
+    width: 700px;
+    height: 200px;
+    background-color: chocolate;
+}
+/*
+너비는 최상위 요소부터 아래로 좁혀가면서
+높이는 가장 허위요소부터 채워지는 형태
+*/
+.div6{
+    width: 500px;
+    height: 200px;
+    background-color: cadetblue;
+}
+.div7{
+    width: 300px;
+    height: 200px;
+    background-color: aquamarine;
+}
+.div8{
+    width: 200px;
+    height: 100px;
+    background-color: thistle;
+}
+.div9{
+    width: 1000px;
+    height: 200px;
+    background-color: crimson;
+}
+.div10{
+    width: 1000px;
+    background-color: chocolate;
+}
+.div11{
+    width: 50%;
+    height: 100px;
+    background-color: tomato;
+}
+.div12>*{
+    width: 200px;
+    height: 200px;
+    background-color: cornflowerblue;
+    display: inline-block;
+}
+/*
+.div13{
+    display: inline;
+}
+.span1{
+    display: block;
+}
+.span2{
+    display: none;
+}
+*/
+
+.ul1{
+    display: none;
+}
+
+.div14>div:hover+.ul1{
+    display: block;
+}
+input[name=gender]{
+    display: none;
+}
+label{
+    width: 100px;
+    height: 40px;
+    line-height: 40px;
+    border: 1px solid black;
+    display: block;
+    text-align: center;
+    font-weight: blod;
+    display: inline-block;
+}
+
+input[name=gender]:checked+label{
+    background-color: black;
+    color: white;
+}
+
+.div{
+    width: 100px;
+    height: 100px;
+    display: inline-block;
+}
+.d1{
+    border-top-style : solid ; /*실선*/
+    border-left-style : dashed ;
+    border-right-style : dotted ;
+    border-bottom-style : double ;
+
+    border-top-width: 1px;
+    border-left-width: 2px;
+    border-right-width: 3px;
+    border-bottom-width: 4px;
+
+    border-top-color: red;
+    border-left-color: #0000ff;
+    border-right-color: rgb(0,255,0);
+    border-bottom-color: orange;
+}
+
+.d2{
+    border-style: groove;
+    border-width: 3px;
+    border-color: blueviolet;
+}
+.d3{
+    border-style: outset;
+}
+.d3:active{
+    border-style: inset;
+}
+.d4{
+    border-style: inset;
+}
+.d5{
+    border-style: ridge;
+}
+
+.d6{
+    border: 5px solid red;
+}
+.d7{
+    border: 10px dashed blue;
+}
+.d8{
+    border : 1px solid black;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 30px;
+}
+.d9{
+    border: 2px dashed red;
+    border-bottom-left-radius: 100px;
+    border-top-right-radius: 100px;
+}
+.d10{
+    border: 3px solid blue;
+    border-radius: 50px;
+}
+.d11{
+    border : 1px solid black;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+.d12{
+    border-style: ridge;
+    box-shadow: 5px 5px 3px 2px gray;
+}
+.d13{
+    border-style: hidden;
+    box-shadow: 5px 5px 3px 2px gray;
+
+}

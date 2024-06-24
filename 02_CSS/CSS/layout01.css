@@ -1,0 +1,44 @@
+.wrap{
+    width: 500px;
+}
+
+.div{
+    width: 150px;
+    height: 150px;
+    display: inline-block;
+    border: 5px dashed black;
+}
+
+.d1{
+    border-color: blue;
+    border-top-style : solid ; /*실선*/
+    border-left-style : solid ;
+    border-top-left-radius: 50px;
+}
+
+
+.d3{
+    border-color: green;
+    border-top-style : solid ; /*실선*/
+    border-right-style : solid ;
+    border-top-right-radius: 50px;
+}
+
+.d5{
+    border-style: dotted;
+    border-color: pink;
+}
+
+.d7{
+    border-color: yellow;
+    border-left-style : solid ;
+    border-bottom-style : solid ;
+    border-bottom-left-radius: 50px;
+}
+
+.d9{
+    border-color: red;
+    border-right-style : solid ;
+    border-bottom-style : solid ;
+    border-bottom-right-radius: 50px;
+}

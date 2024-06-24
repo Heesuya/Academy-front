@@ -1,0 +1,27 @@
+.ul1{
+    list-style-type: disc;
+}
+.ul2{
+    list-style-type: circle;
+}
+.ul3{
+    list-style-type: square;
+}
+.ul4{ /*제일 많이 씀*/
+    list-style-type: none;
+}
+.ol1{
+    list-style-type: lower-alpha;
+}
+.ol2{
+    list-style-type: decimal-leading-zero;
+}
+.ul5{ /* ../  <  상위 폴더로 이동 */
+    list-style-image: url(../image/kakao.jpg);
+}
+.ul6{
+    list-style-position: inside;
+}
+.ul7{
+    list-style-position: outside;
+}

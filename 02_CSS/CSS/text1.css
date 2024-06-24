@@ -1,0 +1,95 @@
+.ff1{
+    font-family: "궁서체";
+}
+.ff2{ /*3개까지 설정가능*/
+    font-family: "고딕체","궁서체","바탕체";
+}
+.ff3{   /* 없는 글꼴은 브라우저 기본글꼴로 변경*/
+    font-family: "없는글꼴1","없는글꼴2","없는글꼴3";
+}
+.webfont1{
+    font-family: "Hi Melody", sans-serif;
+}
+/*다운로드 한 폰트를 적용하는 방법*/
+
+/*1. 다운로드 한 폰트 등록*/
+@font-face {
+    /*새로 등록하는 폰트 이름 지정*/
+    font-family: ns_r;
+    /*적용할 폰트 파일 경로*/
+    src: url(./Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+.webfont2{
+    font-family: ns_r;
+}
+
+@font-face {
+    font-family: ns_b;
+    src: url(./Noto_Sans_KR/static/NotoSansKR-Black.ttf);
+}
+
+.webfont3{
+    font-family: ns_b;
+}
+
+.size1{ /*px 웹상 모니터 기준을 사용하는 단위*/
+    font-size: 32px;
+    
+}
+.size2{
+    /*em : 태그가 기본적으로 가지고있는 크기의 배수로 처리하는 단위*/
+    font-size: 2em;
+    /*rem : 최상위요소의 크기의 배수로 처리하는 단위*/
+}
+
+.fw1{
+    font-weight: normal;
+    /*font-weight: 400;*/
+}
+
+.fw2{
+    font-weight: lighter;
+    /*font-weight: 100;*/
+}
+
+.fw3{
+    font-weight: bold;
+    /*font-weight: 600;*/
+}
+
+.fw4{
+    font-weight: bolder;
+    /*font-weight: 900;*/
+}
+
+.fv{
+    font-variant: small-caps;
+}
+
+.fs1{
+    font-style: italic;
+}
+
+.fs2{
+    font-style: oblique;
+}
+
+.f1{
+    /*
+    font-size: 20px;
+    line-height: 20px;
+    font-family: "궁서체";
+    */
+    font : 20px/20px "궁서체";
+}
+
+.f2{
+    /*
+    font-style: italic;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 30px;
+    font-family: ns_r;
+    */
+    font : italic bold 16px/30px ns_r;
+}
