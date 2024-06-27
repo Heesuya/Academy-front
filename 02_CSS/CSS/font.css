@@ -1,0 +1,12 @@
+@font-face {
+    font-family: ns_r;
+    src: url(./Noto_Sans_KR/static/NotoSansKR-Regular.ttf);
+}
+@font-face {
+    font-family: ns_b;
+    src: url(./Noto_Sans_KR/static/NotoSansKR-Bold.ttf);
+}
+@font-face {
+    font-family: ns_black;
+    src: url(./Noto_Sans_KR/static/NotoSansKR-Black.ttf);
+}

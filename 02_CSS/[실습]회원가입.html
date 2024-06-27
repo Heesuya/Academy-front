@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="CSS/join.css">
+</head>
+    <div class="all-wrap">
+        <div class="wrap">
+            <div class="main-class">
+                <h1>A-Class</h1>
+                <h3>회원가입</h3>
+            </div>
+            <form action="#" method="post">
+                <fieldset>
+                    <div>
+                        <label for="id">아이디<sup>*</sup></label><br>
+                        <input type="text" id="id" name="id">
+                        <button type="button" class="btncheck">중복체크</button>
+                    </div>
+                    <div>
+                        <label for="pw">비밀번호<sup>*</sup></label><br>
+                        <input type="password" id="pw" name="pw">
+                    </div>
+                    <div>
+                        <label for="pwr">비밀번호 확인</label><br>
+                        <input type="password" id="pwr" name="pwr">
+                    </div>
+                    <div>
+                        <label for="name">이름<sup>*</sup></label><br>
+                        <input type="text" id="name" name="name">
+                    </div>
+                    <div>
+                        <label for="gender">성별</label>
+                        <div>
+                            <input type="radio" name="genderm" id="gender" value="남자"><label for="ra1">남자</label>
+                            <input type="radio" name="genderf" id="gender" value="여자"><label for="ra2">여자</label>
+                        </div>
+                    </div>
+                    <div>
+                        <label>이메일<sup>*</sup></label><br>
+                        <input type="text" name="adress"><span>@</span>
+                        <input type="text" name="adress">
+                        <select name="mail">
+                            <option value="">직접입력</option>
+                            <option value="naver.com">naver.com</option>
+                            <option value="google.com">google.com</option>
+                        </select>
+                    </div>
+                    <input type="submit" value="회원가입">
+                </fieldset>
+            </form>
+        </div>
+    </div>
+<body>
+    
+</body>
+</html>

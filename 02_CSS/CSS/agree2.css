@@ -1,0 +1,95 @@
+/* 
+색상은 5개 넘어가지 않게
+패딩, 마진 적당히
+사용할 폰트 : 나눔고딕
+색상 : #ddd, #1e1e1e, #003399, #fff 
+*/
+/* 사용할 폰트 지정 */
+@font-face {
+    font-family: nn_r;
+    src: url(./Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+@font-face {
+    font-family: nn_b;
+    src: url(./Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+}
+@font-face {
+    font-family: nn_eb;
+    src: url(./Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+}
+/* 사용할 색상 코드를 변수로 지정 */
+:root{
+    --color1 : #ddd;
+    --color2 : #1e1e1e;
+    --color3 : #003399;
+    --color4 : #fff;
+}
+/* 기본세팅  (css 세팅) */
+*{
+    font-family: nn_r;
+    color: var(--color2);
+    margin: 0;
+    padding: 0;
+}
+.agree-all-wrap{
+    background-color: var(--color1);
+    padding: 80px;
+}
+.agree-wrap{
+    width: 800px;
+    background-color: var(--color4);   
+    margin: 0 auto;
+    border-radius: 10px;
+}
+.agree-title>h1{
+    text-align: center;
+    font-family: nn_eb;
+    font-size: 36px;
+    color: var(--color3);
+    padding: 25px;
+}
+.agree-title>h3{
+    text-align: center;
+    font-family: nn_b;
+    padding: 15px;
+}
+.agree{
+    width: 600px;
+    margin: 25px auto;
+}
+.agree-name>img{
+    width: 18px;
+}
+.agree-name>span{
+    font-family: nn_b;
+}
+.agree-explain{
+    width: 90%;
+    margin: 15px auto;
+    height: 200px;
+    border: 1px solid var(--color2);
+    overflow: auto;
+    font-size: 13px;
+    padding: 10px;
+    box-sizing: border-box;
+
+}
+.agree-check{
+    text-align: right;
+    width: 90%;
+    margin: 0 auto;
+}
+.agree-btn-box{
+    text-align: center;
+    padding: 30px;
+}
+.agree-btn-box>button{
+    width: 200px;
+    height: 40px;
+    border: none;
+    padding: 5px;
+    background-color: var(--color3);
+    font-family: nn_b;
+    color: var(--color4);
+    cursor: pointer;
+}

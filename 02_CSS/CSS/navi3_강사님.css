@@ -1,0 +1,56 @@
+.navi3{
+    width: 800px;
+    margin: 200px auto;
+    position: relative;
+}
+.navi3 ul{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    overflow: hidden;
+}
+.navi3 ul>li{
+    float: left;
+    width: 150px;
+}
+.sub{
+    width: 800px;
+    background-color: #234f32;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    display: none;
+    position: absolute; /*navi3>ul 에 넣으면 높이값 계산을 못해서 보이지 않음*/
+    left: 0;
+}
+.navi3 ul>li>a{
+    display: block;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+}
+.navi3>ul{
+    background-color: #ffe761;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.navi3>ul>li>a{
+    color: #092e20;
+}
+.sub>li>a{
+    color: #ffe761;
+}
+.navi3>ul>li:hover>a{
+    background-color: #092e20;
+    color: #ffe761;
+    font-weight: 900;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.navi3>ul>li:hover>a+.sub{
+    display: block;
+}
+.sub>li>a:hover{
+    font-weight: 900;
+}

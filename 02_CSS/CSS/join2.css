@@ -1,0 +1,146 @@
+@font-face {
+    font-family: nn_r;
+    src: url(./Nanum_Gothic/NanumGothic-Regular.ttf);
+}
+@font-face {
+    font-family: nn_b;
+    src: url(./Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+}
+@font-face {
+    font-family: nn_eb;
+    src: url(./Nanum_Gothic/NanumGothic-ExtraBold.ttf);
+}
+/* 사용할 색상 코드를 변수로 지정 */
+:root{
+    --color1 : #ddd;
+    --color2 : #1e1e1e;
+    --color3 : #003399;
+    --color4 : #fff;
+}
+/* 기본세팅  (css 세팅) */
+*{
+    font-family: nn_r;
+    color: var(--color2);
+    margin: 0;
+    padding: 0;
+}
+.join-all-wrap{
+    background-color: var(--color1);
+    padding: 80px;
+}
+.join-wrap{
+    width: 800px;
+    background-color: var(--color4);   
+    margin: 0 auto;
+    border-radius: 10px;
+}
+
+.join-title>h1{
+    text-align: center;
+    font-family: nn_eb;
+    font-size: 36px;
+    color: var(--color3);
+    padding: 25px;
+}
+.join-title>h3{
+    text-align: center;
+    font-family: nn_b;
+    padding: 15px;
+}
+.join-content{
+    width: 500px;
+    margin: 0 auto;
+}
+.join-input-wrap{
+    padding: 10px 0px;
+}
+.join-input-wrap>div:first-child{
+    padding: 15px 0px;
+}
+.join-input-wrap>div:first-child>label{
+    color: var(--color3);
+    font-family: nn_b;
+    font-size: 20px;
+}
+.join-input-wrap>div:first-child>label>sup{
+    color: #ff0000;
+    font-family: nn_b;
+}
+.join-input-wrap>div:last-child>input{
+    width: 100%;
+    height: 30px;
+    border: none;
+    border-bottom: 3px solid #ccc;
+    background-color: transparent;
+    outline: none;
+    padding-left: 10px;
+    box-sizing: border-box;
+    font-size: 18px;
+}
+.join-input-wrap>div:last-child>input:focus{
+    border-color: var(--color3);
+}
+.join-input-wrap>div:last-child>.mid-input{
+    width: 400px;
+}/*우선순위 잘 활용해야함*/
+.dup-check{
+    width: 90px;
+    height: 30px;
+    border: none;
+    background-color: var(--color3);
+    color: var(--color4);
+    font-family: nn_b;
+    margin-left: 5px;
+}
+input[name=gender]{
+    display: none;
+}
+input[name=gender]+label{
+    width: 50%;
+    padding: 10px;
+    border: 1px solid var(--color3);
+    color: var(--color3);
+    display: block;
+    text-align: center;
+    float: left;
+    box-sizing: border-box;
+}
+input[name=gender]:checked+label{
+    background-color: var(--color3);
+    color: var(--color4);
+}
+.gender-div{
+    overflow: hidden;
+}
+.join-input-wrap>div:last-child>.short-input{
+    width: 170px;
+}
+.mail-center{
+    display: inline;
+    width: 20px;
+    text-align: center;
+    font-size: 18px;
+}
+.email-choice{
+    width: 126px;
+    height: 30px;
+    margin-left: 2px;
+}
+.join-btn-wrap>input{
+    width: 100%;
+    padding: 15px;
+    font-size: 18px;
+    background-color: var(--color4);
+    color: var(--color3);
+    border: 2px solid var(--color3);
+    font-family: nn_eb;
+    border-radius: 10px;
+    cursor: pointer;
+}
+.join-btn-wrap{
+    padding: 30px 0px;
+}
+.join-btn-wrap>input:hover{
+    background-color: var(--color3);
+    color: var(--color4);
+}

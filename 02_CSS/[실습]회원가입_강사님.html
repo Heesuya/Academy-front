@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>회원가입</title>
+    <link rel="stylesheet" href="CSS/join2.css">
+</head>
+<body>
+    <div class="join-all-wrap">
+        <div class="join-wrap">
+            <div class="join-title">
+                <h1>A-class</h1>
+                <h3>회원가입</h3>
+            </div>
+            <div class="join-content">
+                <form action="join.html" method="post">
+                    <div class="join-input-wrap">
+                        <div>
+                            <label for="id">아이디<sup>*</sup></label>
+                        </div>
+                        <div>
+                            <input type="text" name="id" id="id" class="mid-input" required>
+                            <button type="button" class="dup-check">중복체크</button>
+                        </div>
+                    </div>
+                    <div class="join-input-wrap">
+                        <div>
+                            <label for="pw">비밀번호<sup>*</sup></label>
+                        </div>
+                        <div>
+                            <input type="password" name="pw" id="pw" required>
+                        </div>
+                    </div>
+                    <div class="join-input-wrap">
+                        <div>
+                            <label for="pw">비밀번호 확인</label>
+                        </div>
+                        <div>
+                            <input type="password" name="pwRe" id="pwRe">
+                        </div>
+                    </div>
+                    <div class="join-input-wrap">
+                        <div>
+                            <label for="pw">이름<sup>*</sup></label>
+                        </div>
+                        <div>
+                            <input type="text" name="name" id="name" required>
+                        </div>
+                    </div>
+                    <div class="join-input-wrap">
+                        <div>
+                            <label>성별</label>
+                        </div>
+                        <div class="gender-div">
+                            <input type="radio" name="gender" id="m" value="m">
+                            <label for="m">남자</label>
+                            <input type="radio" name="gender" id="f" value="f">
+                            <label for="f">여자</label>
+                        </div>
+                    </div>
+                    <div class="join-input-wrap">
+                        <div>
+                            <label for="email">이메일<sup>*</sup></label>
+                        </div>
+                        <div>
+                            <input type="text" name="email1" id="email1" class="short-input">
+                            <span class="mail-center">@</span>
+                            <input type="text" name="email2" id="email2" class="short-input">
+                            <select class="email-choice">
+                                <option value="">직접입력</option>
+                                <option value="naver.com">네이버</option>
+                                <option value="gmail.com">구글</option>
+                                <option value="iei.or.kr">kh정보교육원</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="join-btn-wrap">
+                        <input type="submit" value="회원가입">
+                    </div>
+                </form>
+            </div>
+        </div>
+        <script>
+            const select =document.querySelector(".email-choice");
+            select.addEventListener("change",function(){
+                const input = document.querySelector("[name=email2]");
+                input.value = select.value;
+            })
+        </script>
+    </div>
+</body>
+</html>

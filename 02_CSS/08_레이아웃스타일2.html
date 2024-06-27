@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/layout2.css">
+</head>
+<body>
+    <h3>box-sizing : width/height 범위를 설정하는 속성</h3>
+    <pre>선택자{box-sizing : content-box | border-box}</border-box></pre>
+    <div class="div d1"></div>
+    <div class="div d2"></div>
+    <hr>
+    <h3>position : 페이지 요소들의 위치를 설정하는 속성</h3>
+    <pre>선택자{position : static | relative | absolute | fixed}</pre>
+    <div class="outer">
+        <div class="in1"></div>
+        <div class="in2"></div>
+        <div class="in3"></div>
+    </div>
+    <!--outer 다음에 오려하기 br 넣은것-->
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <div class="fixed"></div>
+    <hr>
+    <h3>z-index : 요소들이 쌓이는 순서를 지정(absolute,fixed인 요소들)</h3>
+    <pre>선택자{z-index : 숫자}</pre>
+    <div class="z-wrap">
+        <div class="z-1"></div>
+        <div class="z-2"></div>
+        <div class="z-3"></div>
+    </div>  
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+    <hr>
+    <h3>visibility : 화면에 요소가 보이거나 보이지않게 하는 속성</h3>
+    <pre>선택자{visibility : visible | hidden}</pre>
+    <h3>opacity : 요소의 투명도를 설정</h3>
+    <pre>선택자{opacity : 0 ~ 1}</pre>
+    <div class="vi">
+        <div class="vi1">
+            <div></div>
+        </div>    
+        <div class="vi2"></div>
+        <div class="vi3">
+            <div></div>
+        </div>    
+    </div>
+    <hr>
+    <!--해킹은 사용목적에서 벗어나면 해킹이라고 함-->
+    <h3>float : 요소의 배차를 왼쪽 또는 오른쪽으로 지정하는 속성</h3>
+    <pre>선택자{float : left | right | none}</pre>
+    <h3>clear : float을 사용하게 되면 다음 요소가 영향을 받음 그걸 초기화하는 속성</h3>
+    <pre>선택자{clear : left | right | both | none}</pre>
+    <div class="float">
+        <div>1111</div>
+        <div>2222</div>
+        <div>3333</div>
+        <div>4444</div>
+        <div>5555</div>
+    </div>
+    <div class="clear">설명설명</div>
+    <hr>
+    <h3>overflow : 표현하려는 컨텐츠가 요소의 크기를 넘어간경우 표현방식을 지정</h3>
+    <pre>선택자{overflow : scroll | auto | hidden | visible}</pre>
+    <div class="over over1">abcd</div>
+    <div class="over over2">abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd</div>
+    <div class="over over3">abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd</div>
+    <div class="over over4">abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd abcd</div>
+
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+</body>
+</html>

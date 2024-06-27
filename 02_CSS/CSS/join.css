@@ -1,0 +1,54 @@
+
+
+.all-wrap{
+    background-color: #ddd;
+    width: 100%;
+    position: absolute;
+}
+.main-ground{
+    margin: 0 auto;
+    width: 800px;
+    background-color: #fff;
+    margin-top: 70px;
+    margin-bottom: 70px;
+    position: relative;
+
+}
+.main-class{
+    text-align: center;
+}
+.main-class>h1{
+    color: darkblue;
+}
+fieldset{
+    margin: 0 auto;
+    width: 400px;   
+}
+fieldset>*{
+    margin: 0;
+}
+.user{
+    overflow: hidden;
+}
+.user>*{
+    float: left;
+}
+input[name=r1]{
+    display: none;
+}
+input{
+    border-style: none;
+    border-bottom: 3px solid gray;
+}
+input:focus{
+    border-bottom: 3px solid darkblue;
+    outline: none;
+    
+}
+input[name="adress"]{
+    width: 100px;
+}
+.tbncheck{
+    cursor: pointer;
+    background-color: darkblue;
+}

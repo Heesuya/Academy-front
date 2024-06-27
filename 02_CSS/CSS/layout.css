@@ -186,5 +186,38 @@ input[name=gender]:checked+label{
 .d13{
     border-style: hidden;
     box-shadow: 5px 5px 3px 2px gray;
+}
 
+.div-m{
+    width: 300px;
+    height: 300px;
+    border: 1px solid black;
+    border-color: antiquewhite;
+    background-color: aliceblue;
+}
+
+.test1{
+    margin: 100px;
+/* .test2{
+    margin-top: 50px;
+*/
+    } 
+.test2{
+    padding: 20px
+}
+
+.test3{
+    width: 1200px;
+    background-color: cadetblue;
+    padding : 100px 0px;
+}
+.test4{
+    width: 600px;
+    height: 100px;
+    background-color: darkorange;
+    font-size: 50px;
+    text-align: center;
+    line-height: 100px;
+    margin: 0 auto;
+    
 }

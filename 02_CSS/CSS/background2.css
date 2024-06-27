@@ -1,0 +1,62 @@
+.liner{
+    width: 200px;
+    height: 200px;
+    border : 1px solid black;
+}
+.gra1{
+    background: linear-gradient(#0000ff, #ffffff);
+}
+.gra2{
+    background: linear-gradient(to left,#0000ff, #ffffff);
+}
+.gra3{
+    background: linear-gradient(-45deg,#0000ff, #ffffff);   
+    /* - 는 반대방향 */
+}
+.gra4{
+    background: linear-gradient(90deg,#0000ff, #ffffff 50%,#ff0000);
+}
+.gra5{
+    background: linear-gradient(135deg, #ff0000, #ffff00 30%, #00ff00 60%, #00ffff 90%, #0000ff);
+}
+.gra6{
+    background: repeating-linear-gradient(90deg, #0000ff, #ffffff 20%);
+}
+.circle{
+    width: 300px;
+    height: 200px;
+    border: 1px solid black;
+}
+.gra7{
+    background: radial-gradient(#ffffff, #0000ff,#ff0000);
+}
+.gra8{
+    background: radial-gradient(circle, #ffffff, #0000ff, #ff0000);
+}
+.gra9{ /* -webkit : 브라우저접두사  크롬기준*/
+    background: -webkit-radial-gradient(30% 40%,circle,#ffffff,#0000ff);
+    background: -o-radial-gradient(30% 40%,circle,#ffffff,#0000ff);
+    background: -moz-radial-gradient(30% 40%,circle,#ffffff,#0000ff);
+    background: -ms-radial-gradient(30% 40%,circle,#ffffff,#0000ff);
+}
+.gra10{
+    background: -webkit-radial-gradient(30% 40%,circle closest-side,#ffffff,#0000ff,#ff0000);
+}
+.gra11{
+    background: -webkit-radial-gradient(30% 40%,circle farthest-side,#ffffff,#0000ff, #ff0000);
+}
+.gra12{
+    background: -webkit-radial-gradient(30% 40%,circle closest-corner,#ffffff,#0000ff, #ff0000);
+}
+.gra13{
+    background: -webkit-radial-gradient(30% 40%,circle farthest-corner,#ffffff,#0000ff, #ff0000);
+}
+
+.test-gra{
+    background: #C6FFDD;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #f7797d, #FBD786, #C6FFDD);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #f7797d, #FBD786, #C6FFDD); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+margin : 0;
+padding: 20px;
+color:#fff;
+}

@@ -1,0 +1,143 @@
+.div{
+    width: 200px;
+    height: 200px;
+    border: 10px dashed black;
+    padding: 50px;
+    display: inline-block;
+}
+.d1{ /*default 는 content-box이다*/
+    box-sizing: content-box;
+}
+.d2{
+    box-sizing: border-box;
+}
+
+/*absolute 요소를 겹칠때만 사용한다 (높이값 계산이 안됨).
+새층의 좋아요 버튼이나 창 닫기*/
+.outer{
+    background-color: antiquewhite;
+    position: relative;  /*부모자식 관계여야함*/
+}
+.outer>div{
+    position: absolute;
+}
+.in1{
+    width: 300px;
+    height: 300px;
+    background-color: aquamarine;
+}
+.in2{
+    width: 200px;
+    height: 200px;
+    background-color: blue;
+    top: 50px;
+    left: 50px;
+}
+.in3{
+    width: 100px;
+    height: 100px;
+    top:100px;
+    left:100px;
+    background-color: blueviolet;
+}
+.fixed{ /*따라다녀~~ 쇼핑몰 장바구니, 헤더가 위에 위치하고 따라다니는 애*/
+    width: 100px;
+    height: 100px;
+    background-color: yellow;
+    position: fixed;
+    top: 100px;
+    left: 100px;
+    opacity: 0.5;
+}
+.z-wrap{
+    position: relative;
+}
+.z-wrap>div{
+    width: 150px;
+    height: 150px;
+    position: absolute;
+}
+.z-1{
+    background-color: bisque;
+    z-index: 3;
+}
+.z-2{
+    background-color: darkkhaki;
+    top: 50px;
+    left: 50px;
+    z-index: 1;
+}
+.z-3{
+    background-color: dimgrey;
+    top: 100px;
+    left: 100px;
+    z-index: 2;
+}
+.vi{
+    background-color: black;
+}
+
+.vi>div{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    background-color: tomato;
+}
+.vi>div>div{
+    width: 50px;
+    height: 50px;
+    background-color: blue;
+}
+.vi1{
+    opacity: 0.5;
+    /*전체여도 품고있는 애만 같이 투명해진다*/
+}
+.vi2{
+    visibility: hidden; 
+    /*display:none; 과 다르다, 자리 차지한곳도 안보이게함*/
+}
+.vi>.vi3{
+    background-color: rgb(255,0,0,0.5);
+}
+
+.float{
+    background-color: blanchedalmond;
+    /*
+    float을 사용하면
+    해당 요소의 부모는 float된 요소의 높이를 계산할 수 없음
+    만약에 화면구도를 잡기위해서 float을 사용했다면 -> 다음요소는 옆이아니라 아래로 내려가야함
+    float을 사용할 부모요소가 float된 요소의 높이값을 가져야 아래로 갈 수 있음
+    -> float을 사용한 부모요소 overflow : hidden;
+    */
+    overflow: hidden;
+}
+.float>div{
+    width: 100px;
+    height: 30px;
+    border : 1px solid black;
+}
+.float>div{
+    float : right;
+    /*inline block을 사용하면 공백이 생겨서 float 사용*/
+}
+.clear{
+    /* clear: right; */
+}
+.over{
+    width: 100px;
+    height: 100px;
+    border: 1px solid black;
+    margin-bottom: 100px;
+}
+.over1{
+    overflow: scroll;
+}
+.over2{
+    overflow: auto;
+}
+.over3{
+    overflow: hidden;
+}
+.over4{
+    overflow: visible; /*defualt*/
+}

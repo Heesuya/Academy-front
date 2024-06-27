@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/login.css"
+</head>
+<body>
+    <!--div는 볼록 요소 부모꺼를 따라온다-->
+    <div class="login-wrap">
+        <div class="login-header">
+            <h2>로그인</h2>
+            <h3>MEMBER LOGIN</h3>
+        </div>
+        <div class="login-content">
+            <form action="login.html" method="post" id="login-frm">
+                <div class="input-box">
+                    <input type="text" name="id" placeholder="아이디">
+                    <input type="password" name="pw" placeholder="비밀번호">
+                </div>
+                <div class="btn-box">
+                    <input type="submit" value="로그인">
+                </div>
+            </form>
+            <div class="link-wrap">
+                <a href="#">아이디/패스워드 찾기</a>
+                <a href="#">회원가입</a>
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>
+
+<!--input block요소이기에 가로로 나오는게 맞음 -->
+<!--inline 요소는 크기 조정이 안된다. -->
+<!--inline block 사용하게 되면 블록사이의 공간 계산필요-->
+<!--block요소 나란히 오게 할때는 float 을 가지고 붙임-->
+<!-- float을 주면 부모에게 overflow : hidden 줘야 높이값 가져감-->
+
+<!--input 박스는 border와 padding이 들어가기에 border-box 필요에 따라 사용 -->

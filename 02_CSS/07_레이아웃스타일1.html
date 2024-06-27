@@ -85,6 +85,43 @@
     <div class="div d12"></div>
     <div class="div d13"></div>
     <!-- div.div.d$*13 -->
-    
+    <hr>
+    <h2>여백스타일</h2>
+    <h3>margin : 요소와 요소 사이의 거리</h3>
+    <pre>
+        선택자{margin-[위치] : 거리;} -> top,right,bottom,left를 선택해서 거리를 지정
+        선택자{margin : 거리;} -> 4방향 한번에 설정
+        선택자{margin : 거리1 거리2;} -> 거리1 : top,bottom 설정 / 거리2 : left right 한번에 설정
+        선택자{margin : 거리1 거리2 거리3 거리4;} -> 거리1 : top / 거리2 : right / 거리3 : bottom / 거리4 : left
+    </pre>
+    <h3>padding : 테두리와 컨체츠 사이의 거리</h3>
+    <pre>
+        선택자{padding : 거리;} -> 4방향 한번에 설정 / 다른옵션은 마진과 동일
+    </pre>
+    <!--보더 기준으로 안쪽 패딩 밭깥 마진 -->
+    <div class="div-m test1">내용11111내용11111내용11111내용11111내용11111내용11111내용11111내용11111내용11111내용11111</div>
+    <div class="div-m test2">내용22222내용22222내용22222내용22222내용22222내용22222내용22222내용22222내용22222내용22222</div>
+    <hr>
+    <div class="test3">
+        <div class="test4">내용</div>
+    </div>
+    <!-- 
+    컨텐츠 가운데정렬
+    가운데로 보내고 싶은 컨텐츠가 
+    <div class="div1">
+        <div class ="div2"></div>
+    </div>    
+    1)display : block; 요소인 경우
+                좌우 정렬 : 가운데 정렬하고싶은요소(.div2)의 좌우 마진을 auto로 설정(margin : 0 auto)
+                상하 정렬 : 가운데 정렬하고싶은 요소를 감싸고있는요소(.div1)의 padding top/bottom으로 처리
+
+    div class="div1">
+        <span class="span1">글씨</span>
+    </div>                
+    2)display : inline or inline-bolck; 요소인경우 
+                좌우 정렬 : 가운데 정렬하고싶은 요소를 감싸고 있는 요소(.div1)의 text-align:center
+                상하 정렬 : 가운데 정렬하고싶은 요소(.sapn1)의 행의 높이를 감싸고있는 요소.(div1)과 같게설정
+                            -> 행간의 높이가 글씨보다크면 글씨를 가운데 배치하는 속성을 이용(line-height)
+    -->
 </body>
 </html>

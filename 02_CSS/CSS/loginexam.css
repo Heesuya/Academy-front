@@ -1,0 +1,85 @@
+.login-wrap{
+    width: 1200px;
+}
+h2, h3{
+    margin: 0;
+    padding: 0;
+}
+.login-header>h2{
+    font-family: 맑은 고딕;
+    padding-bottom: 15px;
+    font-weight: 100;
+}
+.login-header>h3{
+    font-family: Segoe Print;
+    font-size: 15px;
+    font-weight: bold;
+    padding-bottom: 30px;
+    color: #ee9ca7;
+}
+.login-header>*{
+    text-align: center;
+    margin: 0;
+    padding: 0;
+} 
+#login-frm{
+    width: 400px;
+    margin: 0 auto;
+    overflow: hidden;
+
+}
+/* #login-frm>div{
+    float: left;
+} */
+ input{
+    margin: 0;
+    padding: 0;
+ }
+.input-box{
+    width: 270px;
+}
+.btn-box{
+    width: 130px;
+    text-align: center;
+}
+
+.input-box, .btn-box{
+    float: left;
+}
+.input-box>*{
+    width: 270px;
+    height: 45px;
+    border-radius: 15px;
+    
+}
+.input-box>:first-child{
+    margin-bottom: 5px;
+
+}
+
+.btn-box>*{
+    width: 100px;
+    height: 100px;
+    background-color: #ee9ca7;
+    padding: 0;
+    border-radius: 15px;
+}
+.link-wrap{
+    width: 400px;
+    margin: 0 auto;
+    padding-top: 20px;
+    text-align: right;
+}
+.link-wrap>*{
+    margin-right: 15px;
+    text-decoration : none;
+    color: black;
+}
+
+.login-content{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    border-top-style: dashed;
+    border-bottom-style:dashed;
+    border-color: darkcyan;
+}

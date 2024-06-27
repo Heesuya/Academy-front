@@ -1,0 +1,80 @@
+html{
+    background-color:rgb(192, 187, 187);
+    
+}
+.main-ground{
+    border-radius: 25px;
+    width: 1000;
+}
+.main-ground{
+    background-color: #fff;
+    width: 1000px;
+    margin: 0 auto;
+    margin-top: 50px;
+}
+.agree-header{
+    padding-top: 10px;
+}
+.agree-header>*{
+    text-align: center;
+}
+.agree-header>h1{
+    color: darkblue;
+    padding-bottom: 15px;
+}
+.agree,agree-check{
+    font-weight: bolder;
+}
+.text1{
+    margin: 0 auto;
+    width: 600px;
+    height: 300px;
+    overflow: auto;
+    border: 1px solid black;
+    margin-top: 20px;
+}
+.checkimg{
+    overflow: hidden;
+    margin-left: 200px;
+}
+.checkimg>*{
+    float: left;
+
+}
+.middle2{
+    margin-top: 100px;
+}
+.check{
+    width: 50px;
+    height: 10px;
+}
+.agree-check{
+    overflow: hidden;
+    margin-top: 30px;
+    margin-right: 200px;
+}
+.agree-check>*{
+    float: right;
+    display: block;
+    font-size: 18px;
+    text-align: left;
+}
+input[name=checkboxbutton]{
+    margin-top: 5px;
+}
+.lastCheck{
+    margin-top: 50px;
+    text-align: center;
+    padding: 100px;
+    margin-bottom: 150px;
+}
+button{
+    width: 200px;
+    height: 50px;
+    background-color: darkblue;
+    color: #fff;
+    cursor: pointer;
+    box-sizing: border-box;
+    outline: none;
+    border: none;
+}
