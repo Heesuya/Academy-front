@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ICE-CART</title>
+    <link rel="stylesheet" href="CSS/icecart.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons"rel="stylesheet">
+</head>
+<body>
+    <div class="wrap">
+        <!--1200정도로 보통씀-->
+        <div class="header">
+            <div class="header-top">
+                <div class="logo">
+                    <a href="#">ICE-MALL</a>
+                </div>
+                <div class="search-box">
+                    <form action="sesarch.html" method="get">
+                        <input type="text" name="keyword" placeholder="검색어를 입력하세요">
+                        <!--이미지 넣으려면 input보다 button이 편리함-->
+                        <button type="submit">
+                            <span class="material-icons">pets</span><!--span이라는 태그는 글씨로 취급한다. 글씨처럼 컨드롤하면 됨-->
+                        </button>
+                    </form>
+                </div>
+                <div class="link-box">
+                    <div class="link-item">
+                        <div>
+                            <span class="material-icons">handshake</span>
+                        </div>
+                        <div><a href="#">JOIN</a></div>
+                    </div>
+                    <div class="link-item">
+                        <div>
+                            <span class="material-icons">login</span>
+                        </div>
+                        <div><a href="#">LOGIN</a></div>
+                    </div>
+                    <div class="link-item">
+                        <div>
+                            <span class="material-icons">icecream</span>
+                        </div>
+                        <div><a href="#">CART</a></div>
+                    </div>
+                </div>
+            </div>
+            <div class="nav">
+                <ul> 
+                    <li><a href="#">menu1</a></li>
+                    <li><a href="#">menu2</a></li>
+                    <li><a href="#">menu3</a></li>
+                    <li><a href="#">menu4</a></li>
+                    <li><a href="#">menu5</a></li>
+                    <li><a href="#">menu6</a></li>
+                </ul>
+            </div>
+        </div>
+
+
+        <div class="content">
+            <div class="content-title">
+                <h3>CART</h3>
+                <div>
+                    <button class="chat-btn">실시간 채팅상담<span class="material-icons">support_agent</span>
+                    </button>
+                </div>
+                    </div>
+                    <form action="#" >
+                        <div class="cart-list">
+                            <div class="cart-delete">
+                                <button type="reset" class="delete-button">선택삭제</button>
+                            </div>
+                            <div class="cart-info">
+                                <div class="line">
+                                    <hr>
+                                </div>
+                                <ul>
+                                    <li>
+                                        <input type="checkbox" name="all-select" id="all-select">
+                                        <label for="all-select" class="all-select">전체상품선택</label>
+                                    </li>
+                                    <li>
+                                        <p>상품정보</p>
+                                    </li>
+                                    <li>
+                                        <p>상품가격</p>
+                                    </li>
+                                    <li>
+                                        <p>수량</p>
+                                    </li>
+                                </ul>
+                            <hr>
+                        </div>
+                    </div>
+                    <div class="product-list">
+                        <div class="product-info">
+                            <ul>
+                                <li>
+                                    <div class="check">
+                                        <input type="checkbox" name="product-check">
+                                    </div>
+                                    <div>
+                                        <a href="#"><img src="./image/cake1.png"></a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <a href="#">반짝이는잔망루피</a>
+                                </li>
+                                <li>
+                                    <div>60000원</div>
+                                </li>
+                                <li>
+                                    <div>
+                                        <label for="number">수량</label>
+                                        <input type="number" name="number" min="1" max="20" value="1" >
+                                    </div>
+                                </li>
+                            </ul>
+                            <hr>
+                            <div class="product-info">
+                                <ul>
+                                    <li>
+                                        <div class="check">
+                                            <input type="checkbox" name="product-check">
+                                        </div>
+                                        <div>
+                                            <a href="#"><img src="./image/bingsu1.png"></a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <a href="#">솔티크림망고빙수</a>
+                                    </li>
+                                    <li>
+                                        <div>120000원</div>
+                                    </li>
+                                    <li>
+                                        <div>
+                                            <label for="number">수량</label>
+                                            <input type="number" name="number" min="1" max="20" value="1" >
+                                        </div>
+                                    </li>
+                                </ul>
+                                <hr>
+                            </div>
+                        </div>
+   
+                </div>
+                <div>
+                    <table>
+                        <tr>
+                            <th height ="20" width ="1000">100만원 이상 구매시 무료배송</th>
+                            <th>결제예정 금액 : 180000원</th>
+                        </tr>
+                    </table>
+                    <hr>
+                </div>
+            <div class="get-product">
+                <button type="submit" class="get-btn" onclick="alert('상품을 구매하시겠습니까?')">상품결제</button>
+                <a href="./[실습]ice-main.html">
+                    <button type="button" class="get-btn">계속쇼핑하기</button>
+                </a>
+            </div>
+        </form>
+    </div>
+    <div class="footer">
+        <div>
+            <p>상호명 : (주)ICE-MALL</p>
+            <p>소재지 : 서울시 영등포구 선유로 57 이레빌딩 19F</p>
+            <p>고객센터 : 1577-0001[평일 09:00 ~ 17:00]</p>
+            <p>EMAIL : admin@khmall.com</p>
+        </div>
+    </div>
+</body>
+</html>
