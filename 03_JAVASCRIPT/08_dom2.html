@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>dom2</title>
+    <style>
+        .div-wrap{
+            overflow: hidden;
+        }
+        .test-div{
+            width: 150px;
+            height: 150px;
+            border: 1px solid black;
+            background-color: darkgray;
+            float: left;
+            margin: 20px;
+        }
+        .big{
+            width: 300px;
+            height: 300px;
+            background-color: pink;
+        }
+
+    </style>
+</head>
+<body>
+    <h1>dom2</h1>
+    <hr>
+    <div id="d1" class="dd1" name="name1"><span>첫번째</span></div>
+    <div id="d2" class="dd1" name="name2">두번째</div>
+    <div id="d3" class="dd2" name="name2">세번째</div>
+    <div id="d4" class="dd2" name="name2">네번째</div>
+    <button onclick="func1();">버튼1</button>
+    <button id="btn2">버튼2</button>
+    <button id="btn3">버튼3</button>
+    <hr>
+    <input type="text" name="input1" id="input1" value="기본값"><br>
+    <input type="password" name="input2" id="input2"><br>
+    <input type="checkbox" id="check" checked><br>
+    <button onclick="func4();">버튼4</button>
+    <button onclick="func5();">버튼5</button>
+    <button onclick="func6();">버튼6</button>
+    <button onclick="func7();">버튼7</button>
+    <hr>
+    <button onclick="minus();">-</button>
+    <input type="text" id="count" value="1" style="width:20px;">
+    <button onclick="plus();">+</button>
+    <hr>
+    <div>
+        <input type="checkbox" name="agree" id="agree1">
+        <label for="agree1">이용약관 동의</label>
+    </div>
+    <div>
+        <input type="checkbox" name="agree" id="agree2">
+        <label for="agree2">개인정보처리 동의</label>
+    </div>
+    <div>
+        <input type="checkbox" name="agree" id="agree3">
+        <label for="agree3">광고성 수신 동의</label>
+    </div>
+    <div>
+        <input type="checkbox" id="allAgree">
+        <label for="allAgree">전체 약관 동의</label>
+    </div>
+    <hr>
+    <a id="link" href="http://www.naver.com">네이버로 이동</a>
+    <button id="btn8">구글로 이동으로 변경</button>
+
+    <hr>
+
+    <div class="div-wrap">
+        <div class="test-div big"></div>
+        <div class="test-div"></div>
+        <div class="test-div"></div>
+    </div>
+    <button id="btn11">키우기</button>
+    <button onclick="func12();">원래대로</button>
+    <button id="btn13">키우기2</button>
+    <button id="btn14">원래대로2</button>
+    <button onclick="func15();">toggle</button>
+
+
+    <script src="./js/08_dom2.js"></script>
+</body>
+</html>
+
+
