@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOM</title>
+    <style>
+        #time-zone{
+            padding: 50px;
+            font-size: 50px;
+            font-weight: 900;
+            border: 10px solid orangered;
+        }
+    </style>
+</head>
+<body>
+    <script src="js/09_1_bom.js"></script>
+    <h1>BOM</h1>
+    <hr>
+    <h3>window.open : 높이랑 너비를 지정해서 새 창을 띄움</h3> <!--요즘은 잘 안씀, 다른걸로 실행함-->
+    <h3>window.setTimeout : 일정 시간 후 함수를 한번 실행 / id값 리턴</h3>
+    <h3>window.clearTimeout : setTimeout함수를 종료(setTimeout실행으로 리턴받은 아이디를 이용)</h3>
+    <h3>window.setInterval : 일정시간마다 함수를 반복실행 / id값 리턴</h3>
+    <h3>window.clearInterval : setInterval을 종료(id값 이용)</h3>
+    <h3>window.onload : 화면에 요소들이 로드가 완료되면 자동으로 한번 실행되는 함수</h3>
+    <button id="btn1">open</button>
+    <button id="btn2">setTimeout</button>
+    <button id="btn3">clearTimeout</button>
+    <button id="btn4">setInterval</button>
+    <button id="btn5">clearInterval</button>
+    <button id="btn6">onload</button>
+    <button id="timeStart">시계 시작</button>
+    <button id="timeStop">시계 정지</button>
+    <div id="time-zone"></div>
+    <hr>
+    <h3>screen : client 운영체제 화면 속의 속성값을 갖는 객체</h3>
+    <h3>location : 브라우저의 주소표시줄과 관련된 객체</h3>
+    <h3>navigetor : 브라우저에 대한 정보</h3>
+    <button id="btn7">screen</button>
+    <button id="btn8">location.href</button>
+    <button id="btn9">location.reload</button>
+    <button id="btn10">현재 위도/경도 조회</button>
+
+    
+    <script src="js/09_bom.js"></script>
+</body>
+</html>

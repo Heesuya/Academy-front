@@ -2,7 +2,7 @@ function changeInfo() {
     const nameText = prompt("이름 : ");
     const ageText = prompt("나이 : ");
     const addrText = prompt("주소 : ");
-    
+
     const nameChange = document.querySelector("#name");
     nameChange.innerText = nameText;
     const ageChange = document.querySelector("#age");
@@ -11,21 +11,27 @@ function changeInfo() {
     addrChange.innerText = addrText;
 }
 
+
 const q2 = document.querySelector("#q2");
-q2.onclick = function(){
-    const inputValue = input1.value;    
-    const result = document.querySelector(".result");
-    if(inputValue % 2 == 0 ){
-        result.innerText = "짝수";
-    }else if (inputValue % 2 == 1) {
-        result.innerText = "홀수";
+q2.onclick = function () {
+    const input1 = document.querySelector("#input1");
+    const inputValue = input1.value;
+    if (isFinite(inputValue)) {
+        if (inputValue % 2 == 0) {
+            input1.innerText = "짝수";
+        } else if (inputValue % 2 == 1) {
+            input1.innerText = "홀수";
+        }
+
     } else {
-        result.innerText ="숫자가 아니";
-    }  
+        input1.innerText = "숫자가 아니";
+    }
 }
 
-function changeImage() {
-    const img = document.querySelector("img");
+//함수를 실행하면서 this를 매개변수로 전달하면
+//함수를 실행시킨 태그를 dom객체로 받을 수 있음
+function changeImage(param) {
+    //const img = document.querySelector("#img");
     img.src = "image/angel.png";
 }
 

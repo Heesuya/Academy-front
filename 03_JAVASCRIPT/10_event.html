@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EVENT</title>
+    <style>
+        .test-div {
+            border: 1px solid black;
+            padding: 20px;
+        }
+
+        .div1 {
+            background-color: bisque;
+        }
+
+        .div2 {
+            background-color: aquamarine;
+        }
+
+        .div3 {
+            background-color: indianred;
+        }
+
+        .div-test {
+            width: 300px;
+            height: 300px;
+            border: 1px solid black;
+        }
+        /* #memberId:focus{
+            background-color : antiquewhite;
+        } */
+    </style>
+</head>
+
+<body>
+    <h1>이벤트</h1>
+    <hr>
+    <h3>고전이벤트 모델 : 요소의 이벤트 속성에 함수를 연결</h3>
+    <h3>인라인 이벤트 모델 : 요소 작성 시 내부에 작성하는 방식</h3>
+    <h3>표준이벤트 모델 : w3c에서 공식적으로 지정한 이벤트</h3>
+    <button>버튼</button><!--이벤트 안건 상태-->
+    <button id="btn1">고전이벤트 모델</button>
+    <!-- 
+    btn1.onclick = function(){
+        
+    } 
+    -->
+
+    <button onclick="console.log('인라인 테스트1')">인라인이벤트 모델</button>
+    <!-- 
+        btn1.onclick = function(){
+            console.log('인라인 테스트1')
+        } 
+    -->
+    <button onclick="func1();">인라인이벤트모델 테스트2</button>
+    <!--함수를 연결해서 사용-->
+    <!-- 
+    btn1.onclick = function(){
+        funct1();
+    } 
+    -->
+
+    <button id="btn2">표준이벤트 모델</button>
+    <!--함수를 연결해서 사용-->
+    <!-- 
+    btn1.onclick = function(){
+        (funct1(){    console.log("표준이벤트 모델!");
+        })();
+    } 
+    -->
+
+    <button id="btn3">비교용1</button> <!--고전이벤트 모델은 마지막에 갈아끼운거 실행-->
+    <button id="btn4">비교용2</button> <!--표준이벤트 모델은 중첩이 된다. -->
+    <!-- 
+    btn1.onclick = function(){
+        (funct1(){
+        })();
+        (funct1(){
+        })();
+    } 
+    -->
+    <hr>
+    <h3>기본이벤트 제거 </h3>
+    <!--
+        기본이벤트 : 이벤트를 js에서 설정하지않아도 자동으로 수행되는 이벤트
+        a태그에 href속성을 적용하면 클릭이벤트 설정을 하지 않아도 페이지 이동 이벤트가 자동으로 실행
+        form태그 내부에 있는 submit
+        -->
+    <a id="a" href="javascript:void(0)">네이버로 이동</a>
+    <hr>
+    <form action="changepw.html" method="post">
+        <fieldset>
+            <legend>비밀번호 변경</legend>
+            <div>
+                <label for="pw">기존비밀번호</label>
+                <input type="password" name="pw" id="pw">
+            </div>
+            <div>
+                <label for="newPw">새 비밀번호</label>
+                <input type="password" name="newPw" id="newPw">
+            </div>
+            <div>
+                <label for="newPwRe">새 비밀번호 확인</label>
+                <input type="password" name="newPwRe" id="newPwRe">
+            </div>
+            <div>
+                <input type="submit" value="비밀번호 변경하기" id="submit" onclick="return func2();">
+            </div>
+
+        </fieldset>
+    </form>
+    <hr>
+    <h3>이벤트 버블링(이벤트 전달) : 자식노드에서 부모노드로 올라가면서 이벤트가 실행되는 현상</h3>
+    <div class="test-div div1">
+        div1
+        <div class="test-div div2">
+            div2
+            <div class="test-div div3">
+                div3
+            </div>
+        </div>
+    </div>
+    <hr>
+    <!--인라인으로 할경우 on 적으면 됨-->
+    <div class="div-test" id="div4">클릭</div>
+    <div class="div-test" id="div5">더블클릭</div>
+    <div class="div-test" id="div6">mouseenter/mouseleave</div>
+    <hr>
+    <label>아이디 : </label>
+    <input type="text" name="memberId" id="memberId">
+    <span id="idCheckMsg"></span>
+
+    <br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+
+
+
+    <script src="js/10_envet.js"></script><!--태그가 내장으로 이벤트를 가지고 있음-->
+</body>
+
+</html>

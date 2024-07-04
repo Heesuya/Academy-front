@@ -1,40 +1,52 @@
+const search = document.querySelectorAll("[name=search]");
+const searchBox = document.querySelectorAll(".searchBox");
+
+
+//코드를 줄이장
+search.forEach(function(radio, i){
+    radio.onclick = function(){
+        searchBox.forEach(function(box){
+            box.style.display = "none"
+        });
+        searchBox[i].style.display = "block";
+    }
+});
+
+//이런 방식으로도 풀수 있다
 /*
-function func1() {
-    const titleBox = document.querySelector("#titleBox");
-    titleBox.style.display = "block";
-    const dateBox = document.querySelector("#dateBox");
-    dateBox.style.display = "block";
-    const writerBox = document.querySelector("#writerBox");
-    writerBox.style.display = "block";
+function changeSearchBox(param){
+    console.log(param);
+    searchBox.forEach(function(box){
+        box.style.display = "none";
+    });
+    const id = param.id;
+    const showBox = document.querySelector("#"+id+"Box");
+    showBox.style.display = "block";
+    //searchBox[index].style.display = "block";   //매개변수 안줬을때
 }
-  */ 
+*/
 
-const title = document.querySelector("#title");
-title.onclick = function(){
-    const titleBox = document.querySelector("#titleBox");
-    titleBox.style.display = "block";
-    const dateBox = document.querySelector("#dateBox");
-    dateBox.style.display = "none";
-    const writerBox = document.querySelector("#writerBox");
-    writerBox.style.display = "none";
-}
-
-const date = document.querySelector("#date");
-date.onclick = function(){
-    const dateBox = document.querySelector("#dateBox");
-    dateBox.style.display = "block";
-    const titleBox = document.querySelector("#titleBox");
-    titleBox.style.display = "none";
-    const writerBox = document.querySelector("#writerBox");
-    writerBox.style.display = "none";
+/*
+search[0].onclick = function(){
+    searchBox.forEach(function(box){
+        box.style.display = "none"
+    });
+    searchBox[0].style.display = "block";
 }
 
-const writer = document.querySelector("#writer");
-writer.onclick = function(){
-    const writerBox = document.querySelector("#writerBox");
-    writerBox.style.display = "block";
-    const titleBox = document.querySelector("#titleBox");
-    titleBox.style.display = "none";
-    const dateBox = document.querySelector("#dateBox");
-    dateBox.style.display = "none";
+search[1].onclick = function(){
+    searchBox.forEach(function(box){
+        box.style.display = "none"
+    });
+
+    searchBox[1].style.display = "block";
 }
+
+search[2].onclick = function(){
+    searchBox.forEach(function(box){
+        box.style.display = "none"
+    });
+    
+    searchBox[2].style.display = "block";
+}
+*/

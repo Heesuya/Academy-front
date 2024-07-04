@@ -27,14 +27,22 @@
     <hr />
     <fieldset>
       <legend>검색할 항목을 선택하세요.</legend>
-      <input type="radio" name="search" id="title" value="title" onclick="func1(this);" />
+      <input type="radio" name="search" id="title" value="title" onclick="changeSearchBox(this);">
       <label for="title">제목</label>
-      <input type="radio" name="search" id="date" value="date" onclick="func1(this);"/>
+      <input type="radio" name="search" id="date" value="date" onclick="changeSearchBox(this);">
       <label for="date">날짜</label>
-      <input type="radio" name="search" id="writer" value="writer" onclick="func1(this);"/>
+      <input type="radio" name="search" id="writer" value="writer" onclick="changeSearchBox(this);">
       <label for="writer">작성자</label>
     </fieldset>
     <hr />
+    <div id="titleBox" class="searchBox">
+      <form action="" method="post">
+        <label>검색할 제목을 입력하세요</label>
+        <br />
+        <input type="text" name="title" size="50" />
+        <input type="submit" value="검색" />
+      </form>
+    </div>
     <div id="dateBox" class="searchBox">
       <form action="" method="post">
         <label>검색할 날짜를 입력하세요</label>
@@ -52,14 +60,7 @@
         <input type="submit" value="검색" />
       </form>
     </div>
-    <div id="titleBox" class="searchBox">
-      <form action="" method="post">
-        <label>검색할 제목을 입력하세요</label>
-        <br />
-        <input type="text" name="title" size="50" />
-        <input type="submit" value="검색" />
-      </form>
-    </div>
+   
     
     
     <script src="js/02_exam2.js"></script>
