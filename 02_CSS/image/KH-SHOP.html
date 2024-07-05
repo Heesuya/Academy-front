@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<!-- saved from url=(0014)about:internet -->
+<html lang="ko"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>KH-SHOP</title>
+    <link rel="stylesheet" href="./KH-SHOP_files/ice.css">
+</head>
+<body>
+    <div class="wrap">
+        <div class="header">
+            <h1>KH-SHOP</h1>
+        </div>
+        <div class="content">
+            <div class="content-header">
+                <h3>icecrem</h3>
+            </div>
+            <div class="middle-content">
+               <div class="iceImg">
+                    <img src="./KH-SHOP_files/ice1.png">
+               </div>
+               <div class="iceDetail">
+                    <div>아몬드봉봉</div>
+                    <div class="section">
+                        <div>
+                            <ul>
+                                <li>구분</li>
+                                <li>가격</li>
+                                <li>수량</li>
+                                <li>적립포인트</li>
+                            </ul>
+                        </div>
+                        <div>
+                            <ul>
+                                <li>[베스킨라빈스] 싱글컵</li>
+                                <li>0원</li>
+                                <li>
+                                    <button>-</button>
+                                    <span>0</span>
+                                    <button>+</button>
+                                </li>
+                                <li>0P</li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div></div>
+               </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="./KH-SHOP_files/ice.js.다운로드"></script>
+<!-- Code injected by live-server -->
+<script>
+	// <![CDATA[  <-- For SVG support
+	if ('WebSocket' in window) {
+		(function () {
+			function refreshCSS() {
+				var sheets = [].slice.call(document.getElementsByTagName("link"));
+				var head = document.getElementsByTagName("head")[0];
+				for (var i = 0; i < sheets.length; ++i) {
+					var elem = sheets[i];
+					var parent = elem.parentElement || head;
+					parent.removeChild(elem);
+					var rel = elem.rel;
+					if (elem.href && typeof rel != "string" || rel.length == 0 || rel.toLowerCase() == "stylesheet") {
+						var url = elem.href.replace(/(&|\?)_cacheOverride=\d+/, '');
+						elem.href = url + (url.indexOf('?') >= 0 ? '&' : '?') + '_cacheOverride=' + (new Date().valueOf());
+					}
+					parent.appendChild(elem);
+				}
+			}
+			var protocol = window.location.protocol === 'http:' ? 'ws://' : 'wss://';
+			var address = protocol + window.location.host + window.location.pathname + '/ws';
+			var socket = new WebSocket(address);
+			socket.onmessage = function (msg) {
+				if (msg.data == 'reload') window.location.reload();
+				else if (msg.data == 'refreshcss') refreshCSS();
+			};
+			if (sessionStorage && !sessionStorage.getItem('IsThisFirstTime_Log_From_LiveServer')) {
+				console.log('Live reload enabled.');
+				sessionStorage.setItem('IsThisFirstTime_Log_From_LiveServer', true);
+			}
+		})();
+	}
+	else {
+		console.error('Upgrade your browser. This Browser is NOT supported WebSocket for Live-Reloading.');
+	}
+	// ]]>
+</script>
+
+</body></html>

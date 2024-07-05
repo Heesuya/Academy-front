@@ -156,6 +156,7 @@ memberId.addEventListener("focusout",function(){
     memberId.style.backgroundColor ="white";
 });
 
+/*
 memberId.addEventListener("keydown",function(){
     console.log("keydown");
 });
@@ -166,4 +167,28 @@ memberId.addEventListener("keyup",function(){
 
 memberId.addEventListener("keypress",function(){
     console.log("keypress");
+});
+*/
+
+//아이디 중복체크 테스트용 임시배열(실제로는 DB조회)
+const userArr = new Array();
+userArr.push("user01");
+userArr.push("user02");
+userArr.push("user03");
+
+//memberId.addEventListener("focusout",function(){ //누른후 다음 넘어가면 
+//memberId.addEventListener("change",function(){  //더많이 사용 //작업량이 더 적다  
+memberId.addEventListener("keyup",function(){ //키보드를 누룰때 마다 반응 //규모큰 서비스는 사용하지 않음
+    console.log("아이디 중복체크로직 동작");
+    const inputId = memberId.value;
+    const searchResult = userArr.indexOf(inputId);
+    if(searchResult == -1){
+        //사용가능
+        idCheckMsg.innerText = "사용 가능한 아이디 입니다.";
+        idCheckMsg.style.color = "green";
+    }else{
+        //이미 사용중
+        idCheckMsg.innerText = "이미 사용중인 아이디 입니다.";
+        idCheckMsg.style.color = "red";
+    }
 });

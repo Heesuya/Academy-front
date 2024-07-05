@@ -1,0 +1,30 @@
+.tab{
+    overflow: hidden;
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+}
+.tab>div{
+    float: left;
+    padding: 15px;
+    cursor: pointer;
+}
+.tab>div:hover{
+    background-color: #ddd;
+}
+
+.tab>.active-tab{
+    background-color: #ddd;
+}
+
+.tab-content{
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+.tab-content>div{
+    display: none;
+}
+
+.tab-content>.active-content{
+    display: block;
+}

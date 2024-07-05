@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+}
+.header{
+    width: 100%;
+    height: 60px;
+    line-height: 60px;
+    background: #7F7FD5;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.header>h1{
+    margin-left: 20px;
+    color: aliceblue;
+
+}
+
+.content-header{
+    width: 90%;
+    height: 50px;
+    line-height: 50px;
+    text-align: center;
+    margin: 0 auto;
+    border-bottom: 1px solid #7F7FD5;
+}
+
+.middle-content{
+    overflow: hidden;
+}
+.middle-content>div{
+    float: left;
+}
+.section{
+    overflow: hidden;
+}
+.section>ul{
+    float: left;
+}
