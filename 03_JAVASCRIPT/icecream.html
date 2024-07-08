@@ -23,35 +23,38 @@
                 </div>
                 <div class="iceDetail">
                     <div>
-                        <h3>엄마는외계인</h3>
+                        <h2>엄마는 외계인</h2>
                     </div>
                     <div class="section">
-                        <table>
-                            <tr>
-                                <td width="300" height="85">구성</td>
-                                <td>[베스킨라빈스]싱글컵</td>
-                            </tr>
-                            <tr>
-                                <td height="85">가격</td>
-                                <td>
-                                    <input type="text" id="won" value="3800"><span>원</span>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="85">수량</td>
-                                <td>
-                                    <button class="minusBtn" onclick="minus();">-</button>
-                                    <input type="text" id="count" value="1" style="width:20px;">
-                                    <button class="plusBtn" onclick="plus();">+</button>
-                                </td>
-                            </tr>
-                            <tr>
-                                <td height="85">적립포인트</td>
-                                <td>0P</td>
-                            </tr>
-                        </table>
+                        <table class="product-info">
+                            <tbody>
+                                <tr>
+                                    <th>구성</th>
+                                    <td>[베스킨라빈스s]싱글컵</td>
+                                </tr>
+                                <tr>
+                                    <th>가격</th>
+                                    <td>
+                                        <span id = "price">3800</span>원
+                                        <!--span은 inline 속성 한 라인 안에서 영역을 주고 싶을 때 사용-->
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>수량</th>
+                                    <td>
+                                        <button class="minusBtn" onclick="minus();">-</button>
+                                        <input type="text" id="count" value="1" style="width:20px;">
+                                        <button class="plusBtn" onclick="plus();">+</button>
+                                    </td>
+                                </tr>
+                                <tr>
+                                    <th>적립포인트</th>
+                                    <td>0P</td>
+                                </tr>
+                            </table>
+                        </tbody>
                     </div>
-                    <div>
+                    <div class="buy-btn">
                         <button type="button" class="giftBtn">선물하기</button>
                         <button type="button" class="cartBtn">장바구니</button>
                     </div>
@@ -67,15 +70,57 @@
             <div>주의사항</div>
         </div>
         <div class="tap-content">
-            <div>
-                <span>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br></span>
+            <div class="product-detail hide">
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>  
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>  
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <p>상세상품</p>
+                <div id="bg"></div>
+                <button id="more-btn">더보기</button>
+                
             </div>
             <div>
-                <span>상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br></span>
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
+                <p>이용안내</p>    
             </div>
             <div>
-                <span>세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br>상품상세<br></span></div>
-        </div>
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+                <p>주의사항</p>    
+            </div>
     </div>
 
     <script src="js/ice.js"></script>

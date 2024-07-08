@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로그인</title>
+    <link rel="stylesheet" href="css/teamLogin.css">
+    <link rel="stylesheet" href="css/teamStyle.css">
+</head>
+
+<body>
+    <div class="header"></div>
+    <div class="content">
+        <div class="content-top">
+            <h1>로그인</h1>
+        </div>
+        <div class="content-body">
+            <form id="loginForm" action="#" method="post">
+                <div>
+                    <div>
+                        <input class="loginInput loginId" value="" type="text" placeholder="아이디를 입력해주세요">
+                    </div>
+                    <div>
+                        <input class="loginInput loginPw" value="" type="password" placeholder="비밀번호를 입력해주세요">
+                    </div>            
+                </div>
+                <div class="searchInfo">
+                    <a href="#">아이디찾기</a>
+                    <span>|</span>
+                    <a href="#">비밀번호찾기</a>
+                </div>
+                <div>
+                    <button class="btn loginBtn" type="submit" onclick="return func1()">로그인</button>
+                    <button class="btn joinBtn" type="button">회원가입</button>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div class="footer"></div>
+    <script src="/js/teamLogin.js"></script>
+</body>
+
+</html>

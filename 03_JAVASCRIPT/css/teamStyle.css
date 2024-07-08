@@ -1,0 +1,10 @@
+@font-face {
+    font-family: gd_r;
+    src: url(./Gowun_Dodum/GowunDodum-Regular.ttf);
+}
+
+:root{
+    --maincolor : #FF7D29;
+    --pointcolor : #FFBF78;
+    --subcolor : #FFEEA9;
+}

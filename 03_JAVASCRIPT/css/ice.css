@@ -3,23 +3,36 @@
     padding: 0;
     outline: none;
 }
-.header{
+/* .header{
+    
     width: 100%;
     height: 60px;
     line-height: 60px;
-    background: #7F7FD5;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-}
+    background: #7F7FD5;  fallback for old browsers 
+    background: -webkit-linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5);   Chrome 10-25, Safari 5.1-6 
+    background: linear-gradient(to right, #91EAE4, #86A8E7, #7F7FD5); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ 
+} */
 .header>h1{
-    margin-left: 20px;
+    height: 60px;
+    /*line-height: 60px;*/
+    background: #d9a7c7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to left, #fffcdc, #d9a7c7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to left, #fffcdc, #d9a7c7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     color: aliceblue;
-
+    padding: 20px;
+    font-size: 36px;
+    /*높이 줄 필요없이 패딩으로 */
 }
 .content{
-    width: 1500px;
+    width: 1200px;
     margin: 0 auto;
 }
+.content-header>h3{
+    text-align: center;
+    padding: 30px;
+    border-bottom: 2px solid #d9a7c7;
+}
+/*
 .content-header{
     width: 90%;
     height: 80px;
@@ -27,57 +40,78 @@
     text-align: center;
     margin: auto;
     border-bottom: 1px solid #7F7FD5;
-}
+}*/
 
 .middle-content{
-    width: 90%;
+    /* width: 90%;
     overflow: hidden;
     margin: 0 auto;
-    margin-top: 60px;
+    margin-top: 60px; 
+    쪼개진 곳에서 위치 설정
+    */
     overflow: hidden;
 }
 .middle-content>div{
     float: left;
 }
 .iceImg{
-    width: 35%;
+    width:500px;
     margin: 0 auto;
+    box-sizing: border-box;
+    padding: 30px 50px;
 }
-.iceImg>img{
+/* .iceImg>img{
     width: 100%;
-}
+} */
 .iceDetail{
-    width: 60%;
-    margin-left: 50px;
+    width: 700px;
+    /*margin-left: 50px;*/
+    padding-top:70px;
 }
 
 
-.section{
+/* .section{
     border-top: 2px solid black;
     border-bottom: 2px solid black;
     margin: 15px 0;
-}
+} */
 
+.section>table{
+    width: 100%;
+    border-top: 2px solid black;
+    border-bottom: 2px solid black;
+}
+.product-info th{
+    width: 250px;
+    height: 40px;
+    text-align: left;
+    padding-left: 15px;
+}
 .plusBtn,.minusBtn{
     background-color: transparent;
     border: none;
-    padding: 5px;
+    padding: 10px;
     cursor: pointer;
 }
-
+.buy-btn{
+    padding: 20px;/*사이즈 때문에 패딩이 안됐음
+                    아래 버튼 사이즈 조정 후 됨*/
+}
 .giftBtn,.cartBtn{
-    width: 200px;
+    width: 150px;
     height: 50px;
     border: none;
     font-size: 18px;
     font-weight: 900;
     color: white;
+    cursor: pointer;
+    color: #ccc;
 }
 .giftBtn{
-    background-color: #91EAE4;
+    background-color: #ffbde6;
 }
 .cartBtn{
-    background-color: #7F7FD5;
+    background-color: #f3f1d8;
 }
 
 .tap{
@@ -90,14 +124,15 @@
 }
 .tap>div{
     float: left;
-    border: 1px solid #91EAE4;
+    border: 1px solid #d9a7c7;
     box-sizing: border-box;
-    width: 500px;
-    height: 60px;
+    width: calc(100% / 3);
+    height: 50px;
     text-align: center;
-    line-height: 60px;
+    line-height: 50px;
     font-size: 18px;
     font-weight: 900;
+    color: #ccc;
 }
 .tap>div:hover{
     background-color: darkgray;
@@ -107,7 +142,8 @@
     } */
 .tap>.active-tap{
     border-bottom: none;
-    border-top: 3px solid #86A8E7;
+    border-top: 3px solid #fffcdc;
+    font-weight: 900;
 }
 .tap-content>.active-content{
     display: block;
@@ -121,4 +157,35 @@
     border: none;
     font-size: 16px;
     width: 50px;
+}
+
+.hide{
+    height: 300px;
+    overflow: hidden;
+}
+.product-detail{
+    position: relative;
+}
+#more-btn{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 50px;
+    border: none;
+    background-color: #d9a7c7;
+    color: #fff;
+    font-size: 18px;
+    cursor: pointer;
+    margin: 0 auto;
+}
+#bg{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(to bottom, transparent, #fff);
+    /* background: linear-gradient(to bottom, rgba(255,255,255,0.4), #fff); */
+    top: 0;
+    left: 0;
+    /* z-index: 1; */
 }
