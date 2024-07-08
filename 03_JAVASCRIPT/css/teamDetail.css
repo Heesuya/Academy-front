@@ -2,6 +2,7 @@
     margin: 0;
     padding: 0;
     outline: none;
+    font-family: gd_r;
 }
 
 .header{
@@ -17,10 +18,11 @@
     background-color: blueviolet;
 }
 .content{
-    width: 1200px;
-    margin: 0 auto;
+        width: 1000px;
+        margin: 0 auto;
 }
 .content-top{
+    text-align: center;
     overflow: hidden;
     margin-top: 50px;
 }
@@ -36,20 +38,41 @@
     width: 100%;
     box-sizing: border-box;
 }
+.content-detail{
+    width: 500px;
+}
 .detail-tb{
     padding-left: 70px;
     width: 500px;
 }
 .detail-tb tr{
     height: 45px;
-    width: 50px;
+    width: 45px;
     text-align: left;
+    font-family: gd_r;
+}
+.price-div{
+    text-align: right;
+}
+#total{
+    font-family: gd_r;
+    font-size: 15px;
+    padding-right: 10px;
+}
+#price{
+    font-size: 30px;
 }
 .cart{
+    margin-left: auto;
     text-align: right;
-    height: 60px;
+    overflow: hidden;
 }
-
+.cart>div{
+    float: right;
+}
+.material-icons{
+    cursor: pointer;
+}
 .cart-btn{
     width: 280px;
     height: 50px;
@@ -74,7 +97,7 @@
 }
 .tap>div{
     margin-top: 50px;
-    width: calc(100% / 3 );
+    width: calc(100% / 4 );
     height: 60px;
     float: left;
     border: 0.1px solid #ccc;
@@ -84,6 +107,7 @@
     line-height: 60px;
     text-align: center;
     cursor: pointer;
+    font-family: gd_r;
 }
 
 
@@ -100,14 +124,62 @@
 }
 
 
-.active-tap{
+.tap>.active-tap{
     border-bottom: none;
     border-top: 3px solid transparent;
     font-weight: 900;
+    background-color: transparent;
+    border-top: 1px solid #eceaea;
 }
 .tap-content>.active-content{
     display: block;
+    margin-top: 20px;
 }
 .tap-content>div{
     display: none;
+}
+.product-explain{
+    margin: 0 auto;
+}
+
+.product-precautions{
+    width: 740px;
+    height: 130px;
+    line-height: 40px;
+    border: 1px solid #ccc;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.product-detail-exp{
+    padding-top: 30px;
+}
+.product-review{
+    overflow: hidden;
+}
+.product-review>li{
+    float: left;
+}
+.inquiry {
+    overflow: hidden;
+
+}
+.inquiry-wrap{
+    margin-top: 50px;
+    margin-bottom: 50px;
+}
+.inquiry>div{
+    float: left;
+}
+.inquiryBtn{
+    width: 100px;
+    height: 30px;
+    border: none;
+    background-color: var(--maincolor);
+    color: #eceaea;
+    font-weight: 900;
+    border-radius: 5px;
+    margin-right: auto;
+    cursor: pointer;
 }

@@ -27,28 +27,34 @@ plusBtn.addEventListener("click",function(){
     }
 });
 
-
-
-const tabs = document.querySelectorAll(".tab>div");
-const contents = document.querySelectorAll(".tab-content>div");
-
-
-
-tabs.forEach(function(tab, i){
-    tab.addEventListener("click",function(){
-        tabs.forEach(function(item){
-            item.classList.remove("active-tap");
+const taps = document.querySelectorAll(".tap>div");
+const tapContents = document.querySelectorAll(".tap-content>div");
+taps.forEach(function(tap, i){
+    tap.addEventListener("click",function(){
+        taps.forEach(function(tap){
+            tap.classList.remove("active-tap");
         });
-        contents.forEach(function(item){
-            item.classList.remove("active-content");
+        tap.classList.add("active-tap");
+
+        tapContents.forEach(function(contents){
+            contents.classList.remove("active-content");
         });
-        tab.classList.add("active-tap");
-        contents[i].classList.add("active-content");
+        tapContents[i].classList.add("active-content");
     });
 });
 
 
 taps[0].classList.add("active-tap");
-contents[0].classList.add("active-content");
+tapContents[0].classList.add("active-content");
 
 
+const cartFavorite = document.querySelector("#cart-favorite");
+cartFavorite.addEventListener("click",function(){
+    if(cartFavorite.innerText === "favorite_border"){
+        cartFavorite.innerText = "favorite";
+        cartFavorite.style.color(red);
+    }else{
+        cartFavorite.innerText = "favorite_border";
+    }
+    
+});
