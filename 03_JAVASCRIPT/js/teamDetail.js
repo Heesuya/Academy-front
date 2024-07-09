@@ -52,9 +52,22 @@ const cartFavorite = document.querySelector("#cart-favorite");
 cartFavorite.addEventListener("click",function(){
     if(cartFavorite.innerText === "favorite_border"){
         cartFavorite.innerText = "favorite";
-        cartFavorite.style.color(red);
+        cartFavorite.style.color = "red";
+        alert("관심상품에 등록되었습니다.");
     }else{
         cartFavorite.innerText = "favorite_border";
+        cartFavorite.style.color = "black";
+        alert("관심상품 해제 되었습니다.");
     }
     
+});
+
+const cartBtn = document.querySelector(".cart-btn");
+cartBtn.addEventListener("click",function(){
+    const result = confirm("장바구니로 이동하겠습니까?");
+    if(result){
+        location.href = 'teamLogin.html';
+    }else{
+
+    }
 });
