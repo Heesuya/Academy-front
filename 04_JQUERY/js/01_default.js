@@ -155,7 +155,7 @@ btn3.on("click",function(){
     const span = $(".ancestors span");   
     //spans.css("border-color", "blue");    (확인용)
     //parent() : 선택된 요소의 바로 위 상위요소
-    const ele = span.parent();
+    const ele = span.parent()
     ele.css("border-color","red");
 });
 
