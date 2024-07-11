@@ -48,3 +48,67 @@ $("#btn1").on("click",function(){
 function text(){ //코드가 길면 function으로 호출하는 방식으로 하면 된다. //페이지가 최적화됨
 
 }
+const levelUpBtn = $(".levelup button");
+levelUpBtn.on("click",function(){
+    const levelSpan = $(this).next().next();
+    const currentLevel = levelSpan.text();
+    const nextLevel = Number(currentLevel) + 1;
+    levelSpan.text(nextLevel);
+});
+
+$("#btn6").on("click",function(){
+    //levelUpBtn.trigger("click");
+    levelUpBtn.click();
+    /*
+    const levelSpan = $(".levelup>div>span:last-child");
+    levelSpan.each(function(i,item){
+        const currentLevel = $(item).text();
+        const nextLevel = Number(currentLevel)+1;
+        $(item).text(nextLevel);
+    });
+    */
+});
+/*
+$("#btn2").on("click",function(){
+    const levelSpan = $(this).next().next();
+    const currentLevel = levelSpan.text();
+    const nextLevel = Number(currentLevel) + 1;
+    levelSpan.text(nextLevel);
+});
+$("#btn3").on("click",function(){
+    const levelSpan = $(this).next().next();
+    const currentLevel = levelSpan.text();
+    const nextLevel = Number(currentLevel) + 1;
+    levelSpan.text(nextLevel);
+});
+*/
+
+$("#click").on("click",function(){
+    $(this).css("color","red");
+});
+$("#dblclick").on("dblclick",function(){
+    $(this).css("color","red");
+});
+$("#mouseupdown").on("mouseup",function(){
+    $(this).css("color","red");
+});
+$("#mouseupdown").on("mousedown",function(){
+    $(this).css("color","yellow");
+});
+$(document).on("mousemove",function(event){
+    const text = event.pageX + " : "+event.pageY;
+    $("#mouse").text(text);
+});
+
+
+$("#input1").on("focusin", function(){
+    $(this).css("background-color","yellow");//이런 디자인으로 할꺼면 css로 하세요, 스크립트보다 css 포커스 선택자로 하는게 편함
+});
+$("#input1").on("focusout", function(){
+    $(this).css("background-color","white");
+});
+
+$("#input1").on("change",function(){
+    //change : focusin할때 input value와 focusout 할때 input의 value가 다르면 동작
+    console.log("input값 변경", $(this).val());
+});

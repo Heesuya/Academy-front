@@ -3,7 +3,7 @@ const plusBtn = document.querySelector(".plusBtn");
 
 minusBtn.addEventListener("click",function(){
     const countSpna = document.querySelector("#count");
-    const count = Number(countSpna.innerText);
+    const count = Number(countSpan.innerText);
     const priceSpan = document.querySelector("#price");
     const price = Number(priceSpan.innerText);
     if(count == 1){
